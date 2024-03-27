@@ -1,0 +1,64 @@
+.page-title{
+    font-size: 2.5rem;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+    margin: 0 0 16px;
+}
+
+.avatar{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.tweet-container{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: 
+    'avatar input'
+    ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-button{
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post-button:hover{
+    opacity: 0.9;
+}
+
+.post-button:disabled{
+    background-color: var(--primary-light);
+    pointer-events: none;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tweet-list{
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.tweet-list-item {
+    padding: 1rem 0;
+}
+.tweet-list-item:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+}
